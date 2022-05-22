@@ -1,4 +1,4 @@
-# Smart Contracts for Crypto Star (token swap) project
+# Smart Contracts for NIOB smart contracts
 ```
 yarn
 yarn clean
