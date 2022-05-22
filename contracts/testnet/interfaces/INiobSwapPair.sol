@@ -1,4 +1,5 @@
-pragma solidity >=0.5.0;
+//SPDX-License-Idetifier: MIT
+pragma solidity ^0.8.4;
 
 interface INiobSwapPair {
     event Approval(address indexed owner, address indexed spender, uint value);

@@ -1,5 +1,5 @@
 {
-  "name": "cstar_smart-contracts",
+  "name": "NIOB_smart-contracts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
     "abigen": "node create_abi_files",
-    "deploy_cst_cro": "npx hardhat deploy --deploy-scripts ./scripts/all/cst --network croTest",
-    "post_cst_deploy": "npx hardhat run ./scripts/all/manual/post_cst_deploy.ts --network croTest"
+    "deploy_niobtest": "npx hardhat deploy --deploy-scripts ./scripts/all/cst --network bsctest",
+    "post_niobtest_deploy": "npx hardhat run ./scripts/all/manual/post_cst_deploy.ts --network bsctest"
   },
   "keywords": [],
   "author": "",
@@ -45,8 +45,7 @@
     "ts-generator": "^0.1.1",
     "ts-node": "^10.2.1",
     "typechain": "^5.1.2",
-    "typescript": "^4.4.3",
-    "yasold": "^0.0.1-alpha"
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",

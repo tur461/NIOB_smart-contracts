@@ -1,7 +1,9 @@
-pragma solidity =0.5.16;
+//SPDX-License-Idetifier: MIT
+pragma solidity ^0.8.4;
 
-import './interfaces/INiobSwapERC20.sol';
+import './abstracts/Ownable.sol';
 import './libraries/SafeMath.sol';
+import './interfaces/INiobSwapERC20.sol';
 
 contract NiobSwapERC20 is INiobSwapERC20 {
     using SafeMath for uint;
@@ -24,7 +26,7 @@ contract NiobSwapERC20 is INiobSwapERC20 {
     constructor() public {
         uint chainId;
         assembly {
-            chainId := chainid
+            chainId := chainid()
         }
         DOMAIN_SEPARATOR = keccak256(
             abi.encode(
@@ -71,7 +73,7 @@ contract NiobSwapERC20 is INiobSwapERC20 {
     }
 
     function transferFrom(address from, address to, uint value) external returns (bool) {
-        if (allowance[from][msg.sender] != uint(-1)) {
+        if (allowance[from][msg.sender] != type(uint).max) {
             allowance[from][msg.sender] = allowance[from][msg.sender].sub(value);
         }
         _transfer(from, to, value);

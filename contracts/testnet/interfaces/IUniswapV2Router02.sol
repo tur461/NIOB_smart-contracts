@@ -1,9 +1,10 @@
+
 //SPDX-License-Idetifier: MIT
 pragma solidity ^0.8.4;
 
-import './INiobSwapRouter01.sol';
+import './IUniswapV2Router01.sol';
 
-interface INiobSwapRouter02 is INiobSwapRouter01 {
+interface IUniswapV2Router02 is IUniswapV2Router01 {
     function removeLiquidityETHSupportingFeeOnTransferTokens(
         address token,
         uint liquidity,

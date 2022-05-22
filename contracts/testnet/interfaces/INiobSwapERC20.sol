@@ -1,9 +1,7 @@
-pragma solidity >=0.5.0;
+//SPDX-License-Idetifier: MIT
+pragma solidity ^0.8.4;
 
 interface INiobSwapERC20 {
-    event Approval(address indexed owner, address indexed spender, uint value);
-    event Transfer(address indexed from, address indexed to, uint value);
-
     function name() external pure returns (string memory);
     function symbol() external pure returns (string memory);
     function decimals() external pure returns (uint8);

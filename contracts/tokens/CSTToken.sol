@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.4;
 
-import "../interfaces/IMintableERC20.sol";
+import "../testnet/interfaces/IMintableERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 

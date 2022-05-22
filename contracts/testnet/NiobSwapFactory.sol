@@ -1,7 +1,8 @@
-pragma solidity =0.5.16;
+//SPDX-License-Idetifier: MIT
+pragma solidity ^0.8.4;
 
-import './interfaces/INiobSwapFactory.sol';
 import './NiobSwapPair.sol';
+import './interfaces/INiobSwapFactory.sol';
 
 contract NiobSwapFactory is INiobSwapFactory {
     bytes32 public constant INIT_CODE_PAIR_HASH = keccak256(abi.encodePacked(type(NiobSwapPair).creationCode));

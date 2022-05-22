@@ -1,4 +1,5 @@
-pragma solidity >=0.5.0;
+//SPDX-License-Idetifier: MIT
+pragma solidity ^0.8.4;
 
 interface INiobSwapFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);

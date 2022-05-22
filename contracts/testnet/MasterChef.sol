@@ -1,6 +1,13 @@
-// File: contracts/niobswap/Farms 2.sol
+//SPDX-License-Idetifier: MIT
+pragma solidity ^0.8.4;
 
-pragma solidity >=0.6.12;
+// this contract is also called Yield Farm Contract
+import './NiobToken.sol';
+import './abstracts/Ownable.sol';
+import './libraries/SafeMath.sol';
+import './libraries/SafeBEP20.sol';
+import './interfaces/INiobReferral.sol';
+import './abstracts/ReentrancyGuard.sol';
 
 // MasterChef is the master of Niob. He can make Niob and he is a fair guy.
 //
