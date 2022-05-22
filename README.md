@@ -1,4 +1,4 @@
-# Smart Contracts for NIOB smart contracts
+# Smart Contracts for NIOB dex and yield farming project
 ```
 yarn
 yarn clean
